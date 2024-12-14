@@ -1,0 +1,276 @@
+* {box-sizing: border-box;}
+
+body {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 17px;
+    background-color: #9fe1e1;
+}
+
+/*Header*/
+
+header {
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+
+header h1 {
+    color: #944D23;
+    margin: 0;
+}
+
+header p {
+    color: #944D23;
+    margin: 0;
+    letter-spacing: .8px;
+}
+
+header div {
+    padding-left: 1vw;
+}
+
+/*Navigation*/
+@media only screen and (max-width: 800px) {
+    nav ul{
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        background-color:#48bcc9;
+        border-radius: 10px;
+        border-bottom: solid 3px #9fe1e1;
+        color:white;
+    }
+
+    nav li.active a {
+        background-color:#f2d544;
+        color: white;
+    }
+
+
+} /* end media querey for narrow screens*/
+
+@media only screen and (min-width: 801px) {
+    nav {
+        background-color: #48bcc9;
+        
+    }
+
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0 2vw;
+        margin: 0;
+    }
+
+    nav a {
+        padding: .8rem 2rem;
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+
+    nav li.active a {
+        background-color: #F2D544;
+        color: white;
+    }
+
+    nav a:hover {
+        background-image: linear-gradient(#f2d54400, #f2d544);
+        color: white;
+    }
+} /* end media querey for wide screens*/
+
+/*Main*/
+main {
+    padding: 1rem 2vw;
+}
+
+main div {
+    width: auto;
+    background-color: white;
+    padding: 1rem;
+    border-radius: .8rem;
+}
+
+main h1 {
+    color: #944D23;
+    margin-top: 0;
+}
+
+main h2 {
+    color: #84ad58;
+    margin: 0 .2rem;
+}
+
+main p {
+    color: black;
+    margin: 0 0 .5rem 0;
+}
+
+main a {
+    color: #024873;
+}
+
+main a:hover {
+    color: orange;
+}
+
+.myform fieldset {
+    border: #84ad58 solid 3px;
+    border-radius: 3px;
+    margin-bottom: .8rem;
+}
+
+.myform legend {
+    color: #668644;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.myform label {
+    margin: .5rem;
+    font-weight: 300;
+}
+
+.myform label, .myform select, .myform [type=text], .myform [type=tel], .myform [type=email], .myform textarea {
+    display: block;
+}
+
+.myform select, .myform [type=text], .myform [type=tel], .myform [type=email], .myform textarea {
+    border:#888888 solid 1px;
+    border-radius: 3px;
+    padding: .3rem;
+    width:250px;
+    font-weight: 200;
+}
+
+.myform textarea {
+    height: 6rem;
+}
+
+.myform [type=submit] {
+    background-color:#f2d544;
+    border: none;
+    padding: .8rem 2rem;
+    border-radius:7px;
+    color: black;
+    font-size: 1rem;
+    font-weight:500;
+    margin: 1rem 0 0 1vw;
+}
+
+figure.hero {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+figure.hero img {
+    width: 100%;
+    height: auto;
+}
+
+figure.destination {
+    margin: 1rem 1.2vw 0 0;
+    border: #84ad58 solid 2px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #944c231e;
+}
+
+figure.destination figcaption {
+    text-align: center;
+    color: #668644;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+div.destination {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.package{
+    border: #668644 solid 3px;
+    margin-right: 1.5rem;
+    width: 17rem;
+    margin: 0 1.5rem 3vw 0;
+}
+
+div.package:hover {
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .5);
+}
+
+div.contents {
+    margin: 0;
+    padding: 0;
+}
+
+div.button {
+    background-color: #f2d544;
+    width: 12rem;
+    padding: .5rem;
+    border: #f2d544 solid 3px;
+}
+
+div.button p {
+    color: white;
+    font-weight: bold;
+    letter-spacing: .8px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+div.button:hover {
+    border: #f2d544 solid 3px;
+    background-color: white;
+    width: 12rem;
+    padding: .5rem;
+}
+
+div.button:hover p {
+    color: #f2d544;
+    font-weight: bold;
+    letter-spacing: .8px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+div.review p {
+    color:#888888;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/*Footer*/
+footer {
+    background-color: rgb(225, 225, 225);
+    padding: .2rem 1vw;
+    color: black;
+    font-size: .9rem;
+    font-weight: 200;
+    clear: both;
+    text-align: center;
+}
+
+main {
+    max-width: 64rem;
+    margin: 0 auto;
+}

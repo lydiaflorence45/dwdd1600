@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Budget Vacations</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Lydia Florence">
+    <meta name="description" content="Affordable vacations for families">
+    <link rel="stylesheet" href="vacation.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <img src="images/logo.png" alt="logo" width="80" height="80">
+    <div>
+        <h1>Budget Vacations</h1>
+        <p>Adventures Without Limits</p>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="destinations.html">DESTINATIONS</a></li>
+        <li><a href="packages.html">PACKAGES</a></li>
+        <li><a href="explore.html">EXPLORE</a></li>
+        <li class="active"><a href="contact.html">CONTACT US</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div>
+    <h1>Contact Us</h1>
+    <p>Contact us with any questions or feedback. We would love to hear from you!</p>
+    <br>
+    <form method="get" class="myform" action="thanks.html">
+        <fieldset>
+            <legend>User Info</legend>
+            <label>*First Name<input type="text" name="firstName" required></label>
+            <label>*Last Name<input type="text" name="lastName" required></label>
+            <label>*Email<input type="email" name="email" required placeholder="example@email.com"></label>
+            <label>Phone Number<input type="tel" name="phone" placeholder="000-000-0000"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Reason For Contact</legend>
+            <label><input type="radio" name="reason" value="destination">Questions about vacation packages/destinations</label>
+            <label><input type="radio" name="reason" value="">Feedback on user experience</label>
+            <label><input type="radio" name="reason" value="">Other</label>
+            <label>Please rate your experience using Budget Vacations</label>
+            <select>
+                <option value="none">Please Select</option>
+                <option value="1">Very Dissatisfied</option>
+                <option value="2">Dissatisfied</option>
+                <option value="3">Neutral</option>
+                <option value="4">Satisfied</option>
+                <option value="5">Very Satisfied</option>
+            </select>
+        </fieldset>
+        <label>Message:
+            <textarea name="message"></textarea>
+        </label>
+        <input type="submit" value="Send">
+        </form>
+    </div>
+</main>
+
+<footer>
+    <p>&copy;2024 | Lydia Florence</p>
+</footer>
+
+</body>
+
+</html>
